@@ -1,0 +1,21 @@
+{
+  "name": "db-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Denys Lutsenko",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "deep-diff": "^1.0.2",
+    "lodash.zip": "^4.2.0",
+    "pg": "^7.7.1",
+    "pg-hstore": "^2.3.2"
+  },
+  "dependencies": {
+    "async-series": "0.0.1",
+    "dotenv": "^6.2.0"
+  }
+}
