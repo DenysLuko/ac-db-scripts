@@ -4,7 +4,7 @@ const {
 
 const journeys = [
   {
-    id: 1,
+    // id: 1,
     travelling_user: 1,
     origin: 1,
     destination: 6,
@@ -12,7 +12,7 @@ const journeys = [
     status: "'complete'"
   },
   {
-    id: 2,
+    // id: 2,
     travelling_user: 1,
     origin: 6,
     destination: 1,
@@ -20,7 +20,7 @@ const journeys = [
     status: "'complete'"
   },
   {
-    id: 3,
+    // id: 3,
     travelling_user: 4,
     origin: 1,
     destination: 6,
@@ -28,7 +28,7 @@ const journeys = [
     status: "'complete'"
   },
   {
-    id: 4,
+    // id: 4,
     travelling_user: 1,
     origin: 6,
     destination: 1,
@@ -36,7 +36,7 @@ const journeys = [
     status: "'complete'"
   },
   {
-    id: 5,
+    // id: 5,
     travelling_user: 3,
     origin: 7,
     destination: 5,
@@ -44,7 +44,7 @@ const journeys = [
     status: "'complete'"
   },
   {
-    id: 6,
+    // id: 6,
     travelling_user: 1,
     origin: 7,
     destination: 5,
@@ -52,7 +52,7 @@ const journeys = [
     status: "'complete'"
   },
   {
-    id: 7,
+    // id: 7,
     travelling_user: 2,
     origin: 7,
     destination: 5,

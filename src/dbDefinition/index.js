@@ -54,6 +54,18 @@ const {
   createCurrencyType
 } = require('./types')
 
+const {
+  POSTGIS_EXTENSION_NAME,
+  createPostGISExtension
+} = require('./extensions')
+
+module.exports.extensionDefinitions = [
+  {
+    extensionName: POSTGIS_EXTENSION_NAME,
+    extensionConstructor: createPostGISExtension
+  }
+]
+
 module.exports.typeDefinitions = [
   {
     typeName: VISIBILITY_TYPE_NAME,

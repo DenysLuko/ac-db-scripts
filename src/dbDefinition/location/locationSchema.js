@@ -10,5 +10,7 @@ module.exports.locationSchema = `(
   id            bigserial PRIMARY KEY,
   airport       bigint REFERENCES ${AIRPORT_TABLE_NAME},
   city          bigint REFERENCES ${CITY_TABLE_NAME},
-  country       bigint REFERENCES ${COUNTRY_TABLE_NAME}
+  country       bigint REFERENCES ${COUNTRY_TABLE_NAME},
+  longitude     double precision NOT NULL,
+  latitude      double precision NOT NULL
 )`

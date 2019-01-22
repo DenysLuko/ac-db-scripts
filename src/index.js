@@ -5,6 +5,7 @@ const {
 } = require('pg')
 
 const {
+  extensionDefinitions,
   typeDefinitions,
   tableDefinitions
 } = require('./dbDefinition')
@@ -12,6 +13,7 @@ const {
 const {
   purgeDatabase,
   createDatabase,
+  setupExtensions,
   setupNewTypes,
   setupNewTables
 } = require('./scripts/setupDB')
@@ -38,6 +40,7 @@ const seedTestDB = async (client) => {
 
   await client.connect()
 
+  await setupExtensions(client, extensionDefinitions)
   await setupNewTypes(client, typeDefinitions)
   await setupNewTables(client, tableDefinitions)
 

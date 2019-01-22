@@ -4,19 +4,19 @@ const {
 
 const settings = [
   {
-    id: 1,
+    // id: 1,
     visibility: "'public'"
   },
   {
-    id: 2,
+    // id: 2,
     visibility: "'private'"
   },
   {
-    id: 3,
+    // id: 3,
     visibility: "'public'"
   },
   {
-    id: 4,
+    // id: 4,
     visibility: "'public'"
   }
 ]

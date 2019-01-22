@@ -4,32 +4,32 @@ const {
 
 const cities = [
   {
-    id: 1,
+    // id: 1,
     name: "'london'",
     country: 2
   },
   {
-    id: 2,
+    // id: 2,
     name: "'munich'",
     country: 1
   },
   {
-    id: 3,
+    // id: 3,
     name: "'frankfurt'",
     country: 1
   },
   {
-    id: 4,
+    // id: 4,
     name: "'new york'",
     country: 3
   },
   {
-    id: 5,
+    // id: 5,
     name: "'almaty'",
     country: 4
   },
   {
-    id: 6,
+    // id: 6,
     name: "'los angeles'",
     country: 3
   }

@@ -4,19 +4,19 @@ const {
 
 const countries = [
   {
-    id: 1,
+    // id: 1,
     name: "'germany'"
   },
   {
-    id: 2,
+    // id: 2,
     name: "'england'"
   },
   {
-    id: 3,
+    // id: 3,
     name: "'usa'"
   },
   {
-    id: 4,
+    // id: 4,
     name: "'kazakhstan'"
   }
 ]
