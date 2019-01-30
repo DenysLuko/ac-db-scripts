@@ -1,8 +1,5 @@
 const { userSeed } = require('./user')
 const { settingSeed } = require('./setting')
-const { citySeed } = require('./city')
-const { countrySeed } = require('./country')
-const { airportSeed } = require('./airport')
 const { locationSeed } = require('./location')
 const { journeySeed } = require('./journey')
 const { deliverySeed } = require('./delivery')
@@ -16,9 +13,6 @@ const { messageSeed } = require('./message')
 module.exports.seeds = [
   settingSeed,
   userSeed,
-  countrySeed,
-  citySeed,
-  airportSeed,
   locationSeed,
   journeySeed,
   deliverySeed,
