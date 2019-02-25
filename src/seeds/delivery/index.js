@@ -4,7 +4,7 @@ const {
 
 const deliveries = [
   {
-    id: 1,
+    // id: 1,
     name: "'PS4'",
     description: "'console with a few games'",
     journey: 1,
@@ -18,7 +18,7 @@ const deliveries = [
     delivery_comment: "'Everything went as planned. Thank you!'"
   },
   {
-    id: 2,
+    // id: 2,
     name: "'Candy + Documents'",
     journey: 2,
     weight_kg: 0.2,
@@ -31,7 +31,7 @@ const deliveries = [
     delivery_comment: "'Utter shit, fuck you!'"
   },
   {
-    id: 3,
+    // id: 3,
     name: "'Home stuff'",
     description: "'Furniture, appliances etc.'",
     journey: 2,
@@ -45,7 +45,7 @@ const deliveries = [
     delivery_comment: "'Slightly late'"
   },
   {
-    id: 4,
+    // id: 4,
     name: "'Photos'",
     journey: 3,
     weight_kg: 0.1,
@@ -58,7 +58,7 @@ const deliveries = [
     delivery_comment: "'Yes, that''s what I wanted. Top service, top person, great exprerience. I am so happy, so so happy, I want to jump and run and fly!!!'"
   },
   {
-    id: 5,
+    // id: 5,
     name: "'Present for mom'",
     journey: 4,
     weight_kg: 0.1,
@@ -70,7 +70,7 @@ const deliveries = [
     delivery_rating: 4
   },
   {
-    id: 6,
+    // id: 6,
     name: "'books'",
     journey: 5,
     weight_kg: 1,
@@ -83,7 +83,7 @@ const deliveries = [
     delivery_comment: "'I was late for pick up and so frustrared that I want to give a bad rating to someone.'"
   },
   {
-    id: 7,
+    // id: 7,
     name: "'horse meat'",
     journey: 5,
     weight_kg: 0.5,
@@ -95,7 +95,7 @@ const deliveries = [
     delivery_rating: 5
   },
   {
-    id: 8,
+    // id: 8,
     name: "'clothes'",
     journey: 7,
     weight_kg: 0.7,
@@ -106,7 +106,7 @@ const deliveries = [
     delivery_status: "'in_progress'"
   },
   {
-    id: 9,
+    // id: 9,
     name: "'clothes'",
     journey: 7,
     weight_kg: 0.7,

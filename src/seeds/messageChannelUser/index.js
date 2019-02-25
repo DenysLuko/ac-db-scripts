@@ -4,47 +4,47 @@ const {
 
 const messageChannelUsers = [
   {
-    id: 1,
+    // id: 1,
     msg_user: 1,
     msg_channel: 1
   },
   {
-    id: 2,
+    // id: 2,
     msg_user: 2,
     msg_channel: 1
   },
   {
-    id: 3,
+    // id: 3,
     msg_user: 1,
     msg_channel: 2
   },
   {
-    id: 4,
+    // id: 4,
     msg_user: 3,
     msg_channel: 2
   },
   {
-    id: 5,
+    // id: 5,
     msg_user: 1,
     msg_channel: 3
   },
   {
-    id: 6,
+    // id: 6,
     msg_user: 2,
     msg_channel: 3
   },
   {
-    id: 7,
+    // id: 7,
     msg_user: 4,
     msg_channel: 3
   },
   {
-    id: 8,
+    // id: 8,
     msg_user: 2,
     msg_channel: 4
   },
   {
-    id: 9,
+    // id: 9,
     msg_user: 4,
     msg_channel: 4
   }

@@ -19,5 +19,6 @@ module.exports.createDeliveryStatusType = `CREATE TYPE ${DELIVERY_STATUS_TYPE_NA
   'cancelled_by_provider',
   'not_fulfilled',
   'fulfilled',
-  'in_progress'
+  'in_progress',
+  'awaiting_confirmation'
 )`

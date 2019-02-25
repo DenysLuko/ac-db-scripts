@@ -10,10 +10,24 @@ module.exports.createDatabase = async (dbName) => {
   return execSync(`createdb ${dbName}`)
 }
 
+module.exports.setupExtensions = async (client, extensions) => (
+  Promise.all(extensions.map(({extensionName, extensionConstructor}) => {
+    console.log(`Creating extension: ${extensionName}.`)
+    return client.query(extensionConstructor)
+  }))
+)
+
 module.exports.setupNewTypes = async (client, typeDefinitions) => (
   Promise.all(typeDefinitions.map(({typeName, typeConstructor}) => {
     console.log(`Declaring type: ${typeName}.`)
     return client.query(typeConstructor)
+  }))
+)
+
+module.exports.setupViews = async (client, viewDefinitions) => (
+  Promise.all(viewDefinitions.map(({viewName, viewConstructor}) => {
+    console.log(`Declaring view: ${viewName}.`)
+    return client.query(viewConstructor)
   }))
 )
 

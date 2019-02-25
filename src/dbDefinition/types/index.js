@@ -16,6 +16,10 @@ const {
   CURRENCY_TYPE_NAME,
   createCurrencyType
 } = require('./currencyType')
+const {
+  LOCATION_TYPE_NAME,
+  createLocationType
+} = require('./locationType')
 
 module.exports.VISIBILITY_TYPE_NAME = VISIBILITY_TYPE_NAME
 module.exports.createVisibilityType = createVisibilityType
@@ -30,3 +34,6 @@ module.exports.createJourneyStatusType = createJourneyStatusType
 
 module.exports.CURRENCY_TYPE_NAME = CURRENCY_TYPE_NAME
 module.exports.createCurrencyType = createCurrencyType
+
+module.exports.LOCATION_TYPE_NAME = LOCATION_TYPE_NAME
+module.exports.createLocationType = createLocationType

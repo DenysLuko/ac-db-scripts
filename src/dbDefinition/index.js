@@ -7,18 +7,6 @@ const {
   createSettingTableCommand
 } = require('./setting')
 const {
-  AIRPORT_TABLE_NAME,
-  createAirportTableCommand
-} = require('./airport')
-const {
-  CITY_TABLE_NAME,
-  createCityTableCommand
-} = require('./city')
-const {
-  COUNTRY_TABLE_NAME,
-  createCountryTableCommand
-} = require('./country')
-const {
   LOCATION_TABLE_NAME,
   createLocationTableCommand
 } = require('./location')
@@ -51,8 +39,40 @@ const {
   JOURNEY_STATUS_TYPE_NAME,
   createJourneyStatusType,
   CURRENCY_TYPE_NAME,
-  createCurrencyType
+  createCurrencyType,
+  LOCATION_TYPE_NAME,
+  createLocationType
 } = require('./types')
+
+const {
+  JOURNEY_VIEW_NAME,
+  createJourneyView,
+  DELIVERY_VIEW_NAME,
+  createDeliveryView
+} = require('./views')
+
+const {
+  POSTGIS_EXTENSION_NAME,
+  createPostGISExtension
+} = require('./extensions')
+
+module.exports.viewDefinitions = [
+  {
+    viewName: JOURNEY_VIEW_NAME,
+    viewConstructor: createJourneyView
+  },
+  {
+    viewName: DELIVERY_VIEW_NAME,
+    viewConstructor: createDeliveryView
+  }
+]
+
+module.exports.extensionDefinitions = [
+  {
+    extensionName: POSTGIS_EXTENSION_NAME,
+    extensionConstructor: createPostGISExtension
+  }
+]
 
 module.exports.typeDefinitions = [
   {
@@ -70,22 +90,14 @@ module.exports.typeDefinitions = [
   {
     typeName: CURRENCY_TYPE_NAME,
     typeConstructor: createCurrencyType
+  },
+  {
+    typeName: LOCATION_TYPE_NAME,
+    typeConstructor: createLocationType
   }
 ]
 
 module.exports.tableDefinitions = [
-  {
-    tableName: COUNTRY_TABLE_NAME,
-    tableCreateCommand: createCountryTableCommand
-  },
-  {
-    tableName: CITY_TABLE_NAME,
-    tableCreateCommand: createCityTableCommand
-  },
-  {
-    tableName: AIRPORT_TABLE_NAME,
-    tableCreateCommand: createAirportTableCommand
-  },
   {
     tableName: LOCATION_TABLE_NAME,
     tableCreateCommand: createLocationTableCommand
