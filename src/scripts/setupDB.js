@@ -24,6 +24,13 @@ module.exports.setupNewTypes = async (client, typeDefinitions) => (
   }))
 )
 
+module.exports.setupViews = async (client, viewDefinitions) => (
+  Promise.all(viewDefinitions.map(({viewName, viewConstructor}) => {
+    console.log(`Declaring view: ${viewName}.`)
+    return client.query(viewConstructor)
+  }))
+)
+
 module.exports.setupNewTables = async (client, tableDefinitions) => {
   /**
    *  For loop to avoid race conditions. Some tables depend on other tables

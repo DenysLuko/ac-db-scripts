@@ -45,9 +45,27 @@ const {
 } = require('./types')
 
 const {
+  JOURNEY_VIEW_NAME,
+  createJourneyView,
+  DELIVERY_VIEW_NAME,
+  createDeliveryView
+} = require('./views')
+
+const {
   POSTGIS_EXTENSION_NAME,
   createPostGISExtension
 } = require('./extensions')
+
+module.exports.viewDefinitions = [
+  {
+    viewName: JOURNEY_VIEW_NAME,
+    viewConstructor: createJourneyView
+  },
+  {
+    viewName: DELIVERY_VIEW_NAME,
+    viewConstructor: createDeliveryView
+  }
+]
 
 module.exports.extensionDefinitions = [
   {

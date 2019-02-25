@@ -7,13 +7,15 @@ const {
 const {
   extensionDefinitions,
   typeDefinitions,
-  tableDefinitions
+  tableDefinitions,
+  viewDefinitions
 } = require('./dbDefinition')
 
 const {
   purgeDatabase,
   createDatabase,
   setupExtensions,
+  setupViews,
   setupNewTypes,
   setupNewTables
 } = require('./scripts/setupDB')
@@ -43,6 +45,7 @@ const seedTestDB = async (client) => {
   await setupExtensions(client, extensionDefinitions)
   await setupNewTypes(client, typeDefinitions)
   await setupNewTables(client, tableDefinitions)
+  await setupViews(client, viewDefinitions)
 
   await seedTables(client, seeds)
 

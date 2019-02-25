@@ -89,6 +89,16 @@ const locations = [
     type: "'user'",
     longitude: 51.4749,
     latitude: -0.1844
+  },
+  {
+    // id: 9,
+    location_name: "'Moon'",
+    location_address: "'123 Mikly Way'",
+    city_name: "'Earth'",
+    country_name: "'Sun'",
+    type: "'user'",
+    longitude: 0,
+    latitude: 0
   }
 ]
 
