@@ -1,5 +1,6 @@
 const { MESSAGE_CHANNEL_TABLE_NAME } = require('../messageChannel')
 const { USER_TABLE_NAME } = require('../user')
+const { MESSAGE_STATUS_TYPE_NAME } = require('../types')
 
 const MESSAGE_TABLE_NAME = 'message'
 
@@ -12,5 +13,6 @@ module.exports.messageSchema = `(
   date_read     timestamp,
   msg_content   text NOT NULL,
   by_user       bigint REFERENCES ${USER_TABLE_NAME} NOT NULL,
-  to_channel    bigint REFERENCES ${MESSAGE_CHANNEL_TABLE_NAME} NOT NULL
+  to_channel    bigint REFERENCES ${MESSAGE_CHANNEL_TABLE_NAME} NOT NULL,
+  status        ${MESSAGE_STATUS_TYPE_NAME} NOT NULL
 )`

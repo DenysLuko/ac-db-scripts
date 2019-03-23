@@ -38,6 +38,8 @@ const {
   createDeliveryStatusType,
   JOURNEY_STATUS_TYPE_NAME,
   createJourneyStatusType,
+  MESSAGE_STATUS_TYPE_NAME,
+  createMessageStatusType,
   CURRENCY_TYPE_NAME,
   createCurrencyType,
   LOCATION_TYPE_NAME,
@@ -48,7 +50,11 @@ const {
   JOURNEY_VIEW_NAME,
   createJourneyView,
   DELIVERY_VIEW_NAME,
-  createDeliveryView
+  createDeliveryView,
+  MESSAGE_CHANNEL_VIEW_NAME,
+  createMessageChannelView,
+  MESSAGE_VIEW_NAME,
+  createMessageView
 } = require('./views')
 
 const {
@@ -64,6 +70,14 @@ module.exports.viewDefinitions = [
   {
     viewName: DELIVERY_VIEW_NAME,
     viewConstructor: createDeliveryView
+  },
+  {
+    viewName: MESSAGE_CHANNEL_VIEW_NAME,
+    viewConstructor: createMessageChannelView
+  },
+  {
+    viewName: MESSAGE_VIEW_NAME,
+    viewConstructor: createMessageView
   }
 ]
 
@@ -86,6 +100,10 @@ module.exports.typeDefinitions = [
   {
     typeName: JOURNEY_STATUS_TYPE_NAME,
     typeConstructor: createJourneyStatusType
+  },
+  {
+    typeName: MESSAGE_STATUS_TYPE_NAME,
+    typeConstructor: createMessageStatusType
   },
   {
     typeName: CURRENCY_TYPE_NAME,
