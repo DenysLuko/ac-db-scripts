@@ -2,7 +2,8 @@ const {
   DELIVERY_STATUS_TYPE_NAME,
   CURRENCY_TYPE_NAME,
   RATEABLE_DELIVERY_STATUS_TYPES,
-  CANCELLED_DELIVERY_STATUS_TYPES
+  CANCELLED_DELIVERY_STATUS_TYPES,
+  DEFAULT_STATUS_TYPE
 } = require('../types')
 const { JOURNEY_TABLE_NAME } = require('../journey')
 const { USER_TABLE_NAME } = require('../user')
@@ -36,10 +37,10 @@ module.exports.deliverySchema = `(
   height_cm           real,
   depth_cm            real,
   currency            ${CURRENCY_TYPE_NAME},
-  value               real CONSTRAINT currency_is_set CHECK (currency IS NOT NULL),
+  value               real CONSTRAINT currency_is_set CHECK (currency IS NOT NULL OR value IS NULL),
   sender              bigint REFERENCES ${USER_TABLE_NAME} NOT NULL,
   receiver            bigint REFERENCES ${USER_TABLE_NAME},
-  delivery_status     ${DELIVERY_STATUS_TYPE_NAME} NOT NULL,
+  delivery_status     ${DELIVERY_STATUS_TYPE_NAME} DEFAULT '${DEFAULT_STATUS_TYPE}',
   delivery_rating     int ${getRatingConstraint('delivery_rating')},
   delivery_comment    text CONSTRAINT delivery_comment_constraint CHECK (delivery_rating IS NOT NULL OR delivery_comment IS NULL),
   sender_rating       int ${getRatingConstraint('sender_rating')},
