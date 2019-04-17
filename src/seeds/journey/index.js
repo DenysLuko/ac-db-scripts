@@ -5,6 +5,8 @@ const {
 const journeys = [
   {
     // id: 1,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-11 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-11 04:05:06 +0:00'",
     travelling_user: 1,
     origin: 1,
     destination: 6,
@@ -13,6 +15,8 @@ const journeys = [
   },
   {
     // id: 1,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
     travelling_user: 1,
     origin: 1,
     destination: 6,
@@ -21,6 +25,8 @@ const journeys = [
   },
   {
     // id: 2,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-09 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-09 04:05:06 +0:00'",
     travelling_user: 1,
     origin: 6,
     destination: 1,
@@ -29,6 +35,8 @@ const journeys = [
   },
   {
     // id: 3,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-11-19 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-11-19 04:05:06 +0:00'",
     travelling_user: 4,
     origin: 1,
     destination: 6,
@@ -37,6 +45,8 @@ const journeys = [
   },
   {
     // id: 4,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-10-19 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-10-19 04:05:06 +0:00'",
     travelling_user: 1,
     origin: 6,
     destination: 1,
@@ -45,6 +55,8 @@ const journeys = [
   },
   {
     // id: 5,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-11 04:12:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-11 04:12:06 +0:00'",
     travelling_user: 3,
     origin: 7,
     destination: 5,
@@ -53,6 +65,8 @@ const journeys = [
   },
   {
     // id: 6,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-13 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-13 04:05:06 +0:00'",
     travelling_user: 1,
     origin: 7,
     destination: 5,
@@ -61,6 +75,8 @@ const journeys = [
   },
   {
     // id: 7,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-23 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-23 04:05:06 +0:00'",
     travelling_user: 2,
     origin: 7,
     destination: 5,
@@ -69,6 +85,8 @@ const journeys = [
   },
   {
     // id: 8,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-11-12 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-11-13 04:05:06 +0:00'",
     travelling_user: 4,
     origin: 3,
     destination: 2,
@@ -77,6 +95,8 @@ const journeys = [
   },
   {
     // id: 9,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-14 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-15 04:05:06 +0:00'",
     travelling_user: 1,
     origin: 2,
     destination: 7,
@@ -85,6 +105,8 @@ const journeys = [
   },
   {
     // id: 10,
+    date_created: "TIMESTAMP WITH TIME ZONE '2017-12-14 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2017-12-14 04:05:06 +0:00'",
     travelling_user: 2,
     origin: 7,
     destination: 1,
@@ -93,6 +115,8 @@ const journeys = [
   },
   {
     // id: 11,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-11 05:11:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-11 05:11:06 +0:00'",
     travelling_user: 1,
     origin: 7,
     destination: 3,
@@ -101,6 +125,8 @@ const journeys = [
   },
   {
     // id: 12,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
     travelling_user: 4,
     origin: 1,
     destination: 7,

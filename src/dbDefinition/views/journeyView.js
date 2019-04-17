@@ -20,7 +20,6 @@ module.exports.createJourneyView = `
       user_table.username as travelling_user_username,
       user_table.email as travelling_user_email,
       user_table.birthday as travelling_user_birthday,
-      user_table.age as travelling_user_age,
       user_table.photo as travelling_user_photo,
       origin_table.id AS origin_id,
       origin_table.location_name AS origin_name,

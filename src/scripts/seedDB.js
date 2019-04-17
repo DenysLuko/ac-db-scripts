@@ -1,7 +1,15 @@
 const zip = require('lodash.zip')
 
-const seedTable = async (client, { tableName, seedData}) => (
-  Promise.all(seedData.map((row, index) => {
+const seedTable = async (client, { tableName, seedData, columnNames, seedType}) => {
+
+  if (seedType === 'csv') {
+    return client.query(`
+      COPY ${tableName} (${columnNames.join(',')})
+      FROM '${seedData}' DELIMITER ',' CSV HEADER;
+    `)
+  }
+
+  return Promise.all(seedData.map((row, index) => {
     const seedEntries = zip(...Object.entries(row))
     const [columnNames, columnValues] = seedEntries
 
@@ -12,7 +20,7 @@ const seedTable = async (client, { tableName, seedData}) => (
       VALUES (${columnValues.join(',')});
     `)
   }))
-)
+}
 
 module.exports.seedTables = async (client, seeds) => {
   // For loop to avoid race conditions

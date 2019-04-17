@@ -5,6 +5,8 @@ const {
 const deliveries = [
   {
     // id: 1,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-01-15 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-01-15 04:05:06 +0:00'",
     name: "'PS4'",
     description: "'console with a few games'",
     journey: 1,
@@ -19,6 +21,8 @@ const deliveries = [
   },
   {
     // id: 2,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-11 11:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-11 11:05:06 +0:00'",
     name: "'Candy + Documents'",
     journey: 2,
     weight_kg: 0.2,
@@ -32,6 +36,8 @@ const deliveries = [
   },
   {
     // id: 3,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-13 11:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-13 11:05:06 +0:00'",
     name: "'Home stuff'",
     description: "'Furniture, appliances etc.'",
     journey: 2,
@@ -46,6 +52,8 @@ const deliveries = [
   },
   {
     // id: 4,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-11-19 11:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-11-19 11:05:06 +0:00'",
     name: "'Photos'",
     journey: 3,
     weight_kg: 0.1,
@@ -59,6 +67,8 @@ const deliveries = [
   },
   {
     // id: 5,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-11-21 11:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-11-21 11:05:06 +0:00'",
     name: "'Present for mom'",
     journey: 4,
     weight_kg: 0.1,
@@ -71,6 +81,8 @@ const deliveries = [
   },
   {
     // id: 6,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-11-24 11:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-11-24 11:05:06 +0:00'",
     name: "'books'",
     journey: 5,
     weight_kg: 1,
@@ -84,6 +96,8 @@ const deliveries = [
   },
   {
     // id: 7,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-02 11:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-02 11:05:06 +0:00'",
     name: "'horse meat'",
     journey: 5,
     weight_kg: 0.5,
@@ -96,6 +110,8 @@ const deliveries = [
   },
   {
     // id: 8,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-19 11:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-19 11:05:06 +0:00'",
     name: "'clothes'",
     journey: 7,
     weight_kg: 0.7,
@@ -107,6 +123,8 @@ const deliveries = [
   },
   {
     // id: 9,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-19 11:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-19 11:05:06 +0:00'",
     name: "'clothes'",
     journey: 7,
     weight_kg: 0.7,

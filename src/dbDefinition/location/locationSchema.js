@@ -8,11 +8,11 @@ module.exports.locationSchema = `(
   id                bigserial PRIMARY KEY,
   longitude         double precision NOT NULL,
   latitude          double precision NOT NULL,
-  location_name     varchar(80) NOT NULL,
+  location_name     varchar(80),
   location_address  varchar(80),
-  city_name         varchar(80),
-  country_name      varchar(80),
+  city_name         varchar(80) NOT NULL,
+  country_name      varchar(80) NOT NULL,
+  country_iso       varchar(3),
   timezone          real,
-  dst               char,
   type              ${LOCATION_TYPE_NAME} NOT NULL
 )`

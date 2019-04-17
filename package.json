@@ -9,6 +9,8 @@
   "author": "Denys Lutsenko",
   "license": "UNLICENSED",
   "devDependencies": {
+    "csv-parse": "^4.4.0",
+    "csv-stringify": "^5.3.0",
     "deep-diff": "^1.0.2",
     "lodash.zip": "^4.2.0",
     "pg": "^7.7.1",

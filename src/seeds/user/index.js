@@ -5,6 +5,8 @@ const {
 const users = [
   {
     // id: 1,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
     name: "'Denys'",
     last_name: "'Lutsenko'",
     username: "'denyslu'",
@@ -16,6 +18,8 @@ const users = [
   },
   {
     // id: 2,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
     name: "'Ula'",
     last_name: "'Seitmurat'",
     username: "'ulchik'",
@@ -27,6 +31,8 @@ const users = [
   },
   {
     // id: 3,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
     name: "'Daniel'",
     last_name: "'Drosdow'",
     username: "'D'",
@@ -37,6 +43,8 @@ const users = [
   },
   {
     // id: 4,
+    date_created: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
+    date_modified: "TIMESTAMP WITH TIME ZONE '2018-12-19 04:05:06 +0:00'",
     name: "'Yerke'",
     last_name: "'Seitmurat'",
     username: "'Yerkeeeeey'",

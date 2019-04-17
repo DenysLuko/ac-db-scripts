@@ -20,8 +20,7 @@ module.exports.createMessageView = `
       user_table.last_name AS message_user_last_name,
       user_table.email AS message_user_email,
       user_table.photo AS message_user_photo,
-      user_table.birthday AS message_user_birthday,
-      user_table.age AS message_user_age
+      user_table.birthday AS message_user_birthday
     FROM
       ${MESSAGE_TABLE_NAME} AS message_table
         INNER JOIN ${MESSAGE_CHANNEL_TABLE_NAME} AS message_channel_table ON message_table.to_channel = message_channel_table.id

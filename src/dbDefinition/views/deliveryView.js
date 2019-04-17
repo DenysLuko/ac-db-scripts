@@ -35,7 +35,6 @@ module.exports.createDeliveryView = `
       journey.travelling_user_username AS travelling_user_username,
       journey.travelling_user_email AS travelling_user_email,
       journey.travelling_user_birthday AS travelling_user_birthday,
-      journey.travelling_user_age AS travelling_user_age,
       journey.travelling_user_photo AS travelling_user_photo,
       journey.origin_id AS origin_id,
       journey.origin_name AS origin_name,
@@ -59,7 +58,6 @@ module.exports.createDeliveryView = `
       sender.username AS sender_username,
       sender.email AS sender_email,
       sender.birthday AS sender_birthday,
-      sender.age AS sender_age,
       sender.photo AS sender_photo,
       receiver.id AS receiver_id,
       receiver.name AS receiver_name,
@@ -67,7 +65,6 @@ module.exports.createDeliveryView = `
       receiver.username AS receiver_username,
       receiver.email AS receiver_email,
       receiver.birthday AS receiver_birthday,
-      receiver.age AS receiver_age,
       receiver.photo AS receiver_photo
     FROM
       ${DELIVERY_TABLE_NAME} AS delivery

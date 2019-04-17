@@ -31,6 +31,8 @@ module.exports.deliverySchema = `(
   id                  bigserial PRIMARY KEY,
   name                varchar(80),
   description         text,
+  date_created        time with time zone NOT NULL,
+  date_modified       time with time zone NOT NULL,
   journey             bigint REFERENCES ${JOURNEY_TABLE_NAME} NOT NULL,
   weight_kg           real,
   width_cm            real,

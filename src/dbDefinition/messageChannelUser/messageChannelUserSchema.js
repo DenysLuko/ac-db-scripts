@@ -7,6 +7,7 @@ module.exports.MESSAGE_CHANNEL_USER_TABLE_NAME = MESSAGE_CHANNEL_USER_TABLE_NAME
 
 module.exports.messageChannelUserSchema = `(
   id              bigserial PRIMARY KEY,
+  date_created    time with time zone NOT NULL,
   msg_user        bigint REFERENCES ${USER_TABLE_NAME} NOT NULL,
   msg_channel     bigint REFERENCES ${MESSAGE_CHANNEL_TABLE_NAME} NOT NULL
 )`
